@@ -87,6 +87,10 @@ body {
     display: inline-block;
 }
 
+.footer div h5 blockquote {
+    text-align: center;
+}
+
 .video {
     text-align: center;
 }
