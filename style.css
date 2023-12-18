@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Lora:wght@500;553&family=Open+Sans&family=Poppins&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&family=Rubik+Burned&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
@@ -8,101 +14,129 @@ body {
 }
 
 body {
-    background-color: #299ead;
-    display: flex;
-    justify-content: center;
+    background-color: #addde4;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 90%;
+    margin: auto;
 }
 
 .wrapper {
-    width: 1200px;
+    /* width: 90%; */
+    max-width: 90%;
     display: flex;
     margin: 0 auto;
     background-color: white;
 }
 
-.main {
-    display: flex;
-    flex-flow: column;
-    width: 85%;
-}
-
 .menu {
-    width: 15%;
-    background-color: #c9c5c5;
-    padding: 10px 20px 0px;
+    width: 18%;
+    background-color: #d8d6d6;
+    padding: 30px 0px 0px 20px;
 }
 
 .menu ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .menu ul li a {
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 90%;
 }
 
 .header {
-    background-color: rgb(204, 200, 200);
-    min-height: 160px;
-    line-height: 0;
-    width: 100%;
+    background-color: rgb(252, 249, 249);
+    /* min-height: 160px; */
+    /* line-height: 0; */
+    /* width: 100%; */
+    display: flex;
 }
 
-.header .image {
+.header .image, .imageAbout {
     display: inline-block;
-    margin-left: -4px;
+    /* margin-left: -4px; */
 }
 
 .header div img {
     height: 163px;
-    width: 103.9%;
+    width: 100.9%;
 }
 
-.header .imageAbout {
-    display: inline-block;
+.imageAbout {
+    overflow: hidden;
 }
 
 .header .imageAbout img {
     height: 163px;
-    width: 326px;
+    /* width: 306px; */
+    width: 100%;
+    /* object-fit: contain; */
+}
+
+.marca {
+    width: 23%;
+    padding: 0 1rem;
 }
 
 .content {
     background-color: white;
-    min-height: 300px;
-    padding: 20px;
+    /* min-height: 300px; */
+    padding: 20px 25px;
+    text-align: justify;
+}
+
+h1, h2 {
+    margin: 1rem 0;
+}
+
+h3 {
+    margin: 0.8rem 0;
+}
+
+.content ol {
+    padding-left: 20px;
+}
+
+.content-contact {
+    display: flex;
+    gap: 10px;
 }
 
 .contact {
     display: inline-block;
+    flex: 1;
 }
 
-.footer {
-    background-color: rgb(32, 22, 68);
-    min-height: 80px;
-    color: white;
+.contact legend {
+    padding: 0 10px;
 }
 
-.footer div {
-    display: inline-block;
+.contact form {
+    padding: 10px;
 }
 
-.footer div h5 blockquote {
-    text-align: center;
+.contact textarea {
+    padding: 5px 10px;
 }
 
-.video {
-    text-align: center;
-}
-
-.footer p {
-    margin-left: 30px;
+.contact button {
+    padding: 5px 10px;
 }
 
 .table {
     text-align: center;
     border: solid 1px black;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .table th, td {
@@ -124,3 +158,31 @@ table tbody tr:hover td {
     background-color: #E9E9E9;
     cursor: pointer;
 }
+
+.footer {
+    background-color: rgb(32, 22, 68);
+    min-height: 80px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer div {
+    display: inline-block;
+    margin: 20px 0;
+    
+}
+
+.footer div h5 blockquote {
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+}
+
+/* .footer p {
+    margin-left: 30px;
+} */
